@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="#ffffff"
+    
+     >
+     
+    
+    <LinearLayout 
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView 
+                android:id="@+id/trainNumber"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/f_t_a_train_heading_size"
+                 android:paddingTop="@dimen/f_t_a_train_padding_top"
+				android:paddingBottom="@dimen/f_t_a_train_padding_top"
+				android:paddingLeft="@dimen/f_t_a_train_padding_left"
+                android:textStyle="bold"
+                android:text="Train 120"
+                android:layout_weight="1"
+                />
+            
+             <TextView 
+                android:id="@+id/trainDate"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/f_t_a_train_heading_size"
+                 android:paddingTop="@dimen/f_t_a_train_padding_top"
+				android:paddingBottom="@dimen/f_t_a_train_padding_top"
+				
+                android:textStyle="bold"
+                android:text="04/08/2014"
+                android:layout_weight="1"
+                />
+            
+            
+        </LinearLayout>
+         <TextView 
+                android:id="@+id/trainName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/f_t_a_train_heading_size"
+                 android:paddingTop="@dimen/f_t_a_train_padding_top"
+				android:paddingBottom="@dimen/f_t_a_train_padding_top"
+				android:paddingLeft="@dimen/f_t_a_train_padding_left"
+                
+                android:text="new delih ndls"
+               
+                />
+         
+         <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView 
+                android:id="@+id/destinationFrom"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/f_t_a_train_heading_size"
+                 android:paddingTop="@dimen/f_t_a_train_padding_top"
+				android:paddingBottom="@dimen/f_t_a_train_padding_top"
+				android:paddingLeft="@dimen/f_t_a_train_padding_left"
+              
+                android:text="new delhi"
+                android:layout_weight="1"
+                />
+            
+             <TextView 
+                android:id="@+id/destinationTo"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/f_t_a_train_heading_size"
+                 android:paddingTop="@dimen/f_t_a_train_padding_top"
+				android:paddingBottom="@dimen/f_t_a_train_padding_top"
+				
+               
+                android:text="ghaziabad"
+                android:layout_weight="1"
+                />
+            
+            
+        </LinearLayout>
+         <TextView 
+                android:id="@+id/trainQuota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/f_t_a_train_heading_size"
+                 android:paddingTop="@dimen/f_t_a_train_padding_top"
+				android:paddingBottom="@dimen/f_t_a_train_padding_top"
+				android:paddingLeft="@dimen/f_t_a_train_padding_left"
+                
+                android:text="GN"
+               
+                />
+         
+         <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView 
+              
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/f_t_a_train_heading_size"
+                 android:paddingTop="@dimen/f_t_a_train_padding_top"
+				android:paddingBottom="@dimen/f_t_a_train_padding_top"
+				android:paddingLeft="@dimen/f_t_a_train_padding_left"
+              
+                android:text="S.No"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                />
+            
+             <TextView 
+               
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/f_t_a_train_heading_size"
+                 android:paddingTop="@dimen/f_t_a_train_padding_top"
+				android:paddingBottom="@dimen/f_t_a_train_padding_top"
+				 android:textStyle="bold"
+               
+                android:text="DOJ"
+                android:layout_weight="1"
+                />
+             <TextView 
+               
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/f_t_a_train_heading_size"
+                 android:paddingTop="@dimen/f_t_a_train_padding_top"
+				android:paddingBottom="@dimen/f_t_a_train_padding_top"
+				 android:textStyle="bold"
+               
+                android:text="Class"
+                android:layout_weight="1"
+                />
+            
+        </LinearLayout>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#000000"
+            />
+    
+ <ListView
+       android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+       />
+    </LinearLayout>
+    
+    <ProgressBar 
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+    
+         <TextView 
+         android:id="@+id/no_records_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:gravity="center"
+           
+            
+            android:layout_centerInParent="true"
+           
+            android:textSize="18dip"
+            android:text="No results found!"
+            android:visibility="gone"
+           />
+    
+
+</RelativeLayout>

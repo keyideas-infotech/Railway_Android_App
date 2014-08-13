@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        
+        
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:paddingBottom="8dip"
+        android:background="#ffffff"
+        >
+
+        <LinearLayout
+            android:id="@+id/core_search_train"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+       
+           
+             >
+
+         
+
+                <TextView
+                    android:id="@+id/FROM_NAME"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Source Station - Code : "
+                    android:textSize="@dimen/text_simple"
+                    android:textColor="#696969"
+                      android:layout_marginTop="10dp"
+                     />
+
+                <AutoCompleteTextView
+                    android:id="@+id/edFROM_NAME"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/enter_pnr"
+                   
+                    android:gravity="center"
+                     android:layout_marginTop="10dp"
+                    android:singleLine="true" 
+                    android:paddingTop="8dip"
+                    android:paddingBottom="8dip"
+                    android:inputType="textCapCharacters"
+                    />
+
+                   
+                
+
+
+                <TextView
+                    android:id="@+id/TO_NAME"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Destination Station - Code: "
+                    android:textSize="@dimen/text_simple"
+                    android:textColor="#696969" 
+                    android:layout_marginTop="10dp"
+                    />
+
+                <AutoCompleteTextView
+                    android:id="@+id/edTO_NAME"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     
+                   android:gravity="center"
+                    android:background="@drawable/enter_pnr"
+                    android:singleLine="true"
+                     android:layout_marginTop="10dp"
+                      android:paddingTop="8dip"
+                    android:paddingBottom="8dip"
+                    android:inputType="textCapCharacters"
+                     />
+
+          
+ 			<TextView
+                    android:id="@+id/station_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class"
+                    android:textSize="@dimen/text_simple"
+                    android:textColor="#696969" 
+                    android:layout_marginTop="10dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/station_class_array"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                   android:gravity="center"
+                    
+                   
+                     android:layout_marginTop="10dp"
+                     
+                   
+                    
+                     />
+                
+                
+                
+                <TextView
+                    android:id="@+id/station_quota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quota"
+                    android:textSize="@dimen/text_simple"
+                    android:textColor="#696969" 
+                    android:layout_marginTop="10dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/station_quota_array"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     
+                   android:gravity="center"
+                    
+                    
+                     android:layout_marginTop="10dp"
+                     
+                    
+                    
+                     />
+           
+                <TextView
+                    android:id="@+id/travelDATE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.15"
+                    android:text="Journey Date : "
+                    android:textSize="@dimen/text_simple"
+                    android:textColor="#696969" 
+                     android:layout_marginTop="10dp"
+                    />
+
+                 <DatePicker
+                    android:id="@+id/datePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:layout_gravity="center"
+                  
+                    android:calendarViewShown="false"
+                    />
+
+                 <TextView
+                     android:id="@+id/btnSEARCH_TRAIN"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="@dimen/find_train_search_button_margin"
+                     android:text="Search"
+                     android:paddingLeft="@dimen/find_t_fragment_button_padding_left"
+                     android:paddingRight="@dimen/find_t_fragment_button_padding_left"
+                     android:background="#cd0728"
+                     android:layout_gravity="center"
+                    
+                      android:textColor="@android:color/white"
+                      android:textStyle="bold"
+                     android:textSize="@dimen/find_t_fragment_button_text_size"
+                     android:paddingTop="5dip"
+                     android:paddingBottom="5dip"
+                    />
+    
+                
+        </LinearLayout>
+    </ScrollView>
+
